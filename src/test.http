@@ -1,0 +1,41 @@
+#http
+POST http://localhost:3000/api/wilder/create HTTP/1.1
+content-type: application/json
+
+{
+    "name": "TOTO",
+    "city": "Parizer",
+    "skills": [
+        {
+            "title": "node",
+            "votes": 5
+        },
+        {
+            "title": "mongo",
+            "votes": 12
+        }
+    ]
+}
+
+
+### update
+POST http://localhost:3000/api/wilder/update/6143167d38c036ee3ceed7f0 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "ROGER",
+    "city": "Parizer",
+    "skills": [
+        {
+            "title": "node",
+            "votes": 5
+        },
+        {
+            "title": "mongo",
+            "votes": 12
+        }
+    ]
+}
+
+### delete
+POST http://localhost:3000/api/wilder/delete/614347d61dbd137f04ead167 HTTP/1.1
